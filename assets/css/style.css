@@ -46,12 +46,17 @@
   background-color: #df8a13;
   border-color: none;
   font-size: 1.25rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
 }
 
 .panel-body {
   border: 1px solid #d5d5d5;
   border-radius: 0 0 4px 4px;
+}
+
+.input-lg,
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
 }
 
 html {
@@ -112,6 +117,26 @@ a:hover, a:focus {
 }
 .vertical-slider__image {
   width: 100%;
+}
+
+.user-login {
+  position: relative;
+}
+.user-login__tabs {
+  position: absolute;
+  top: 0%;
+  right: 15px;
+  border: none;
+  margin-right: -5px;
+}
+.user-login a {
+  padding: 14px 5px 12px !important;
+  color: #d5d5d5;
+  background-color: transparent !important;
+  border: none !important;
+}
+.user-login .active > a {
+  color: #ffffff !important;
 }
 @media (min-width: 576px) {
   .header-logo__title {
