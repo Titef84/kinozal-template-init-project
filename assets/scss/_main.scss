@@ -12,6 +12,23 @@
 }
 
 .new-films {
+  font-family: $font-main;
+  position: relative;
+  overflow: hidden;
+
+  &-title {
+    font-family: $font-header;
+    font-size: 3rem;
+    margin: -10px 0 1em;
+
+    &::after {
+      position: absolute;
+      width: 100%;
+      margin: 0.85em 0 0 $gap;
+      content: "";
+      border-bottom: 3px solid $color-accent-light;
+    }
+  }
   &-row {
     margin-right: -$gap-sm;
     margin-bottom: -$gap;
@@ -31,8 +48,19 @@
       width: 100%;
     }
 
+    &__caption {
+      text-align: center;
+    }
     &__title {
       @include text-shortener;
+      display: block;
+      font-size: $font-size;
+      overflow: hidden;
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-weight: bold;
+      line-height: 1.1;
     }
   }
 }
