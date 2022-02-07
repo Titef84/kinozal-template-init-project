@@ -64,3 +64,120 @@
     }
   }
 }
+
+.top-films {
+  font-family: $font-main;
+  position: relative;
+  overflow: hidden;
+
+  &-title {
+    font-family: $font-header;
+    font-size: 2.5rem;
+    margin: 60px 0 45px 45px;
+    font-weight: 500;
+    line-height: 1.1;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      width: 30px;
+      margin: 0.25em 0 0 0;
+      content: "";
+      border-bottom: 3px solid $color-accent-light;
+    }
+
+    &::after {
+      position: absolute;
+      width: 100%;
+      margin: 0.85em 0 0 $gap;
+      content: "";
+      border-bottom: 3px solid $color-accent-light;
+    }
+  }
+  &-row {
+    margin-right: -$gap-sm;
+    margin-bottom: -$gap;
+    margin-left: -$gap-sm;
+  }
+
+  &-item {
+    margin-bottom: $gap;
+    padding-right: $gap-sm;
+    padding-left: $gap-sm;
+
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__caption {
+      text-align: center;
+    }
+    &__title {
+      @include text-shortener;
+      display: block;
+      font-size: $font-size;
+      overflow: hidden;
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-weight: bold;
+      line-height: 1.1;
+    }
+  }
+}
+
+.film-news {
+  position: relative;
+  overflow: hidden;
+  &-title {
+    font-size: 2.5rem;
+    margin: 60px 0 45px 45px;
+    font-family: $font-header;
+    font-weight: 500;
+    line-height: 1.1;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      width: 30px;
+      margin: 0.25em 0 0 0;
+      content: "";
+      border-bottom: 3px solid $color-accent-light;
+    }
+
+    &::after {
+      position: absolute;
+      width: 100%;
+      margin: 0.85em 0 0 15px;
+      content: "";
+      border-bottom: 3px solid $color-accent-light;
+    }
+  }
+  &-item {
+    &__title {
+      color: $color-primary;
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+    &__thumbnail {
+    }
+    &__image {
+    }
+    &__text {
+      text-align: justify;
+    }
+    &__link {
+      color: $color-white;
+      background-color: $color-accent-light;
+      background-color: $color-accent-light;
+      float: right;
+      margin-bottom: 30px;
+      transition: background-color 0.25s;
+    }
+  }
+}
