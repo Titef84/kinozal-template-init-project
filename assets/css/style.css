@@ -265,8 +265,12 @@ a:hover, a:focus {
   font-weight: 500;
   line-height: 1.1;
 }
+.film-news-item__image {
+  width: 100%;
+}
 .film-news-item__text {
   text-align: justify;
+  margin: 0 0 10px;
 }
 .film-news-item__link {
   color: #ffffff;
@@ -401,6 +405,48 @@ a:hover, a:focus {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+
+.footer {
+  padding-top: 45px;
+  color: #d5d5d5;
+  background-color: #232323;
+  font-family: "PT Sans", sans-serif;
+}
+.footer .container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer .container {
+  display: block;
+}
+.footer .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.footer-top h4 {
+  font-size: 1.125rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer-top ul {
+  padding: 0;
+  list-style: none;
+}
+.footer-top a {
+  color: #6f6f6f;
+}
+.footer-first {
+  float: left;
+}
+.footer .footer-fifth {
+  margin: 20px 0;
+  text-align: center;
+}
+.footer .footer-fifth__link {
+  color: #d5d5d5;
+}
 @media (min-width: 576px) {
   .header-logo__title {
     font-size: 3.5rem;
@@ -411,13 +457,13 @@ a:hover, a:focus {
     border-radius: 4px;
   }
   .navbar-left {
-    margin-bottom: 0;
+    margin: 0;
   }
   .navbar-left > li {
     margin: 5px 5px 5px 0;
   }
   .navbar-right {
-    margin-top: 0;
+    margin-right: -15px;
   }
   .navbar-right > li {
     margin: 5px 0 5px 5px;
@@ -428,8 +474,43 @@ a:hover, a:focus {
     text-align: center;
   }
 }
+@media (max-width: 767.8px) and (min-width: 576px) {
+  .navbar-left {
+    margin: 7.5px -15px 0 -15px;
+  }
+  .navbar-right {
+    margin: 0 -15px 7.5px -15px;
+  }
+  .film-news-item__thumbnail {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 575.8px) {
+  .navbar-left {
+    margin: 7.5px -15px 0 -15px;
+  }
+  .navbar-right {
+    margin: 0 -15px 7.5px -15px;
+  }
   .header-logo__title {
     font-size: 2.5rem;
+  }
+  .new-films-title {
+    font-size: 2rem;
+    margin: 0 0 1em;
+  }
+  .top-films-title {
+    font-size: 1.75rem;
+    margin: 45px 0 30px 45px;
+  }
+  .film-news-title {
+    font-size: 1.75rem;
+    margin: 45px 0 30px 45px;
+  }
+  .film-news-item__title {
+    font-size: 1.25rem;
+  }
+  .film-news-item__thumbnail {
+    margin-bottom: 0;
   }
 }
