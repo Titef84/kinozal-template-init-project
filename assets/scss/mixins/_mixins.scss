@@ -1,4 +1,4 @@
-@use "../presets/skin";
+@use "../presets" as *;
 
 @mixin text-shortener {
   display: block;
@@ -44,4 +44,21 @@
   padding: 0;
 
   border: 0;
+}
+
+@mixin trait-after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid $color-accent-light;
+}
+
+@mixin trait-before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
+  content: "";
+  border-bottom: 3px solid $color-accent-light;
 }
