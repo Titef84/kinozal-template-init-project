@@ -14,6 +14,11 @@
     &::after {
       @include trait-after;
     }
+
+    @include xs {
+      font-size: 2rem;
+      margin: 0 0 1em;
+    }
   }
 
   &__video {
@@ -55,6 +60,11 @@
     &::after {
       @include trait-after;
     }
+
+    @include xs {
+      font-size: 1.75rem;
+      margin: 45px 0 30px 45px;
+    }
   }
 }
 
@@ -72,6 +82,11 @@
 
     &::after {
       @include trait-after;
+    }
+
+    @include xs {
+      font-size: 1.75rem;
+      margin: 45px 0 30px 45px;
     }
   }
 }
@@ -91,9 +106,23 @@
     &::after {
       @include trait-after;
     }
+
+    @include xs {
+      font-size: 1.75rem;
+      margin: 45px 0 30px 45px;
+    }
   }
 
   &__button {
     float: right;
   }
+}
+
+.form-control__glyphicon {
+  font-size: 19px;
+  font-weight: 700;
+  color: #45a8fc;
+  float: right;
+  margin-top: -28px;
+  margin-right: 8px;
 }
