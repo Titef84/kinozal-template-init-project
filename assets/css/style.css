@@ -313,6 +313,9 @@ a:hover, a:focus {
   font-size: 1.2rem;
   font-family: "PT Sans", sans-serif;
 }
+.film-info__wrapper {
+  white-space: nowrap;
+}
 .film-info__wrapper:not(:last-of-type) {
   margin-right: 15px;
 }
